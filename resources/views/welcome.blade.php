@@ -12,7 +12,25 @@
 <body>
     {{-- Main --}}
     <main>
-        
+        {{-- Riga --}}
+        <div class="row">
+            {{-- Ciclo --}}
+            @foreach ($movies as $movie)
+                {{-- Colonna --}}
+                <div class="col">
+                    {{-- Carta --}}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">{{ $movie["title"] }}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">{{ $movie["original_title"] }}</h6>
+                        <a href="#" class="card-link">{{ $movie["nationality"] }}</a>
+                        <a href="#" class="card-link">{{ $movie["date"] }}</a>
+                        <a href="#" class="card-link">{{ $movie["vote"] }}</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </main>
 </body>
 </html>
