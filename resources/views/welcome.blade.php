@@ -21,13 +21,13 @@
                     {{-- Carta --}}
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">{{ $movie["title"] }}</h5>
-                          <p class="card-text">{{ $movie["original_title"] }}</p>
+                          <h5 class="card-title">{{ $movie->title }}</h5>
+                          <p class="card-text">{{ $movie->original_title }}</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">{{ $movie["nationality"] }}</li>
-                          <li class="list-group-item">{{ $movie["date"] }}</li>
-                          <li class="list-group-item">{{ $movie["vote"] }}</li>
+                          <li class="list-group-item">{{ $movie->nationality }}</li>
+                          <li class="list-group-item">{{ $movie->date }}</li>
+                          <li class="list-group-item">{{ $movie->vote }}</li>
                         </ul>
                     </div>
                 </div>
